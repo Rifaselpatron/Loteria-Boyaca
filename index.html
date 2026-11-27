@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071a44">
+  <title>Lotería Boyacá | Selección de boletas</title>
+  <meta name="description" content="Elige tus números, consulta el total automáticamente y revisa los datos de pago antes de enviar tu comprobante.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lotería Boyacá | Selección de boletas">
+  <meta property="og:description" content="🎟️ 1 boleta por $50.000 COP o 5 por $95.000 COP. Selecciona tus números y envíalos por WhatsApp.">
+  <meta property="og:image" content="https://anonimo0122.github.io/Loteria-De-Boyacaa/premio.jpg">
+  <meta property="og:image:secure_url" content="https://anonimo0122.github.io/Loteria-De-Boyacaa/premio.jpg">
+  <meta property="og:image:alt" content="Premio principal de la rifa">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://anonimo0122.github.io/Loteria-De-Boyacaa/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lotería Boyacá | Selección de boletas">
+  <meta name="twitter:description" content="🍀 1 boleta por $50.000 COP o 5 por $95.000 COP. Elige tus números y envíalos por WhatsApp.">
+  <meta name="twitter:image" content="https://anonimo0122.github.io/Loteria-De-Boyacaa/premio.jpg">
+  <meta name="twitter:image:alt" content="Premio principal de la Lotería Boyacá">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="casino-glow glow-one"></div>
+  <div class="casino-glow glow-two"></div>
+  <div class="floating-decor decor-one">🍀</div>
+  <div class="floating-decor decor-two">🎰</div>
+  <div class="floating-decor decor-three">🃏</div>
+  <div class="floating-decor decor-four">💰</div>
+
+  <header class="hero">
+    <div class="brandbar">
+      <div class="top-badge"><span>🇨🇴</span> LOTERÍA BOYACÁ · EXPERIENCIA INDEPENDIENTE</div>
+      <div class="socials">
+        <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X">𝕏 <span>X</span></a>
+        <a href="https://wa.me/573216513686" target="_blank" rel="noopener" aria-label="WhatsApp">◉ <span>WhatsApp</span></a>
+      </div>
+    </div>
+    <div class="country-label">🇨🇴 LOTERÍA BOYACÁ · BOLETAS</div>
+
+    <h1>LOTERÍA <span>BOYACÁ</span></h1>
+    <p class="hero-subtitle">✨ Información clara para elegir tus boletas ✨</p>
+    <p class="tagline">🎟️ Selecciona tus números · 💳 revisa el total · 📲 envía tu comprobante</p>
+    <p class="tagline">Sitio independiente; no es la página oficial de la Lotería de Boyacá.</p>
+
+    <div class="trust-row">
+      <span>🍀 LOTERÍA BOYACÁ</span>
+      <span>💳 PAGO VISIBLE</span>
+      <span>🎟️ ELIGE TUS BOLETAS</span>
+      <span>📲 ENVÍO POR WHATSAPP</span>
+    </div>
+
+    <div class="prize-card">
+      <div class="prize-copy">
+        <div class="mini-label">🏆 INFORMACIÓN DE BOLETAS</div>
+        <h2>ELIGE TUS BOLETAS</h2>
+        <p><strong>1 boleta por $50.000 COP</strong> o <strong>5 boletas por $95.000 COP</strong>. ¡La promoción se repite por cada grupo de 5!</p>
+        <div class="lucky-pills">
+          <span>🎟️ 1 por $50.000 COP</span>
+          <span>🔥 5 por $95.000 COP</span>
+          <span>🎉 10 por $190.000 COP · 15 por $285.000 COP</span>
+        </div>
+      </div>
+      <div class="prize-photo">
+        <div class="photo-placeholder">
+          <img class="prize-image" src="premio.jpg" alt="Foto del premio"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <div class="photo-fallback">
+            <span>🚙</span>
+            <b>AQUÍ VA LA FOTO<br>DEL PREMIO</b>
+            <small>La foto está en la misma carpeta que index.html</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="single-price-card"><span>🎟️ PROMOCIÓN</span><strong>1 por $50.000 · 5 por $95.000 COP</strong></div>
+
+    <div class="stats">
+      <div class="total-stat"><strong>10.000</strong><span>NÚMEROS TOTALES</span></div>
+      <div class="available-stat"><strong id="availableCount">4.000</strong><span>DISPONIBLES · 40%</span></div>
+      <div class="blocked-stat"><strong id="blockedCount">6.000</strong><span>MARCADOS EN ROJO · 60%</span></div>
+    </div>
+    <div class="progress-card">
+      <div class="progress-head">
+        <div><span class="eyebrow">🎟️ NÚMEROS MARCADOS</span><strong><span id="progressPercent">60</span>% marcados en rojo</strong></div>
+        <span class="progress-chip">6.000 MARCADOS EN ROJO</span>
+      </div>
+      <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:60%"></div></div>
+      <div class="progress-labels"><span>🔴 60% marcados</span><span>🟢 40% disponibles</span><span>10.000 números</span></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="payment-box">
+      <div class="payment-title">💳 NUESTRO MÉTODO DE PAGO</div>
+      <div class="bank-card">
+        <div class="bank-heading"><span class="bank-logo">🏦</span><div><strong>BANCOLOMBIA</strong><small>Cuenta de ahorros · Pago por Llave Bre-B</small></div><span class="secure-tag">DATOS DE PAGO</span></div>
+        <div class="bank-detail"><div><small>NOMBRE DEL TITULAR</small><strong id="bankName">Emeli Rodríguez</strong></div><button class="copy-btn" data-copy="bankName">📋 Copiar nombre</button></div>
+        <div class="bank-detail account-detail"><div><small>NÚMERO DE CUENTA / LLAVE BRE-B</small><strong id="bankNumber">29700056307</strong></div><button class="copy-btn" data-copy="bankNumber">📋 Copiar número</button></div>
+        <div class="account-type"><span>TIPO DE CUENTA</span><strong>Ahorros</strong></div>
+        <p class="bre-note">🏦 Realice el pago a través de <strong>Bancolombia</strong>, a nombre de <strong>Emeli Rodríguez</strong>. También puede realizar el pago desde cualquier cuenta bancaria por medio de la <strong>Llave Bre-B</strong>. Una vez realizado, confirme el pago para enviarle su factura de compra. ✅❤️🙏</p>
+      </div>
+      <button class="whatsapp-btn" id="whatsappBtn">📲 ENVIAR NÚMEROS POR WHATSAPP</button>
+      <p class="edit-note">📌 <b>Importante:</b> envía el comprobante de pago para verificar tu compra. ¡Gracias por participar! ✅</p>
+    </section>
+
+    <section class="legend">
+      <div><span class="dot available"></span> Disponible</div>
+      <div><span class="dot unavailable"></span> Marcado en rojo</div>
+      <div><span class="dot selected-dot"></span> Seleccionado</div>
+      <div class="selected-info">🎯 Seleccionados: <b id="selectedCount">0</b></div>
+    </section>
+
+    <section class="number-panel">
+      <div class="panel-title">
+        <div class="panel-kicker">🇨🇴 🍀 TABLERO DE LA SUERTE 🍀 🇨🇴</div>
+        <h2>🎰 ELIGE TUS NÚMEROS</h2>
+        <p>Busca un número o filtra el tablero. Los verdes se pueden seleccionar; los rojos están bloqueados en esta configuración.</p><p class="inventory-disclaimer">Aviso: los números rojos se asignan aleatoriamente como demostración y no representan ventas confirmadas.</p>
+      </div>
+      <div class="number-tools">
+        <label class="number-search"><span>⌕</span><input id="numberSearch" type="search" inputmode="numeric" maxlength="5" placeholder="Buscar número (ej. 0248)" aria-label="Buscar número"></label>
+        <div class="filter-tabs" role="group" aria-label="Filtrar números">
+          <button type="button" class="filter-tab active" data-filter="all">Todos</button>
+          <button type="button" class="filter-tab" data-filter="available">Verdes</button>
+          <button type="button" class="filter-tab" data-filter="blocked">Rojos</button>
+          <button type="button" class="filter-tab" data-filter="selected">Elegidos</button>
+        </div>
+        <p class="results-label" id="resultsLabel">Mostrando 10.000 números</p>
+      </div>
+      <div id="numbers" class="numbers-grid"></div>
+    </section>
+
+    <section class="purchase">
+      <div class="ticket-icon">🎟️</div>
+      <h2>TUS NÚMEROS SELECCIONADOS</h2>
+      <p id="selectedText">Aún no has seleccionado números.</p>
+
+      <div class="price-summary" id="priceSummary">
+        <span>💰 TOTAL A PAGAR</span>
+        <strong id="totalPrice">$0 COP</strong>
+      </div>
+
+      <button id="clearBtn" class="secondary">Limpiar selección</button>
+      <button id="reserveBtn" class="primary" disabled>💳 PAGAR — $0 COP</button>
+      
+    </section>
+  </main>
+
+  <aside class="sticky-checkout" id="stickyCheckout" aria-live="polite">
+    <div class="sticky-info">
+      <span class="sticky-kicker">🎟️ TU SELECCIÓN</span>
+      <strong id="stickyNumbers">Selecciona tus números</strong>
+      <small><span id="stickyCount">0</span> números · <b id="stickyTotal">$0 COP</b></small>
+    </div>
+    <button class="primary sticky-pay" id="stickyPayBtn" type="button" disabled>💳 PAGAR</button>
+  </aside>
+
+  <div class="payment-modal" id="paymentModal" aria-hidden="true">
+    <div class="payment-modal-backdrop" id="paymentModalBackdrop"></div>
+    <div class="payment-modal-card" role="dialog" aria-modal="true" aria-labelledby="paymentModalTitle">
+      <button class="modal-close" id="closePaymentModal" aria-label="Cerrar">×</button>
+      <div class="modal-icon">💳</div>
+      <h2 id="paymentModalTitle">REALIZA TU PAGO</h2>
+      <p class="modal-subtitle">Confirma tus números y realiza el pago a la cuenta de ahorros Bancolombia indicada o desde cualquier banco por medio de la Llave Bre-B.</p>
+
+      <div class="modal-order">
+        <div><span>NÚMEROS</span><strong id="modalNumbers">—</strong></div>
+        <div><span>CANTIDAD</span><strong id="modalCount">0</strong></div>
+        <div class="modal-total"><span>TOTAL A PAGAR</span><strong id="modalTotal">$0 COP</strong></div>
+      </div>
+
+      <div class="modal-nequi bank-modal-detail"><span class="nequi-icon">🏦</span><div><small>BANCOLOMBIA · CUENTA DE AHORROS / LLAVE BRE-B</small><strong>29700056307</strong><small>Emeli Rodríguez</small></div></div>
+
+      <div class="payment-steps">
+        <p>1️⃣ Envía el valor exacto mostrado arriba.</p>
+        <p>2️⃣ Guarda el comprobante de pago.</p>
+        <p>3️⃣ Pulsa el botón y envíalo por WhatsApp.</p>
+      </div>
+
+      <button class="whatsapp-btn modal-whatsapp" id="modalWhatsappBtn">📲 ENVIAR NÚMEROS POR WHATSAPP</button>
+      <p class="modal-note">El botón de WhatsApp abre un mensaje con tus números y el valor total para confirmar el pago y solicitar tu factura de compra.</p>
+    </div>
+  </div>
+
+<footer>
+      <div class="footer-brand">🍀 LOTERÍA BOYACÁ</div>
+      <div class="footer-links">
+        <a href="https://x.com/" target="_blank" rel="noopener">𝕏 X</a>
+        <a href="https://wa.me/573216513686" target="_blank" rel="noopener">◉ WhatsApp</a>
+      </div>
+      <small>© 2026 · Sitio independiente. No representa ni está afiliado oficialmente a la Lotería de Boyacá.</small>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
